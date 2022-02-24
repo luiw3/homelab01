@@ -6,14 +6,16 @@ This project's objective is to setup a simple store stock manager application in
 
 ### Application To do
 
- - [ ] Create the front-end using Vue.js
+ - [ ] Create the [front-end](https://github.com/luiw3/homelab01_front-end) using Next.js
 	 - [ ] Index page with some info about the store
 	 - [ ] Products listing
 	 - [ ] Add product to cart
 	 - [ ] Registration page
 	 - [ ] Login page
 	 - [ ] Check out page
- - [ ] Create the back-end using Adonis
+ - [ ] Create the [back-end](https://github.com/luiw3/homelab01_back-end) using Node.js
+	 - [ ] Configure project with typescript
+	 - [ ] Configure automatic lint
 	 - [ ] Set up bearer token to verify users
 	 - [ ] Bearer token auto-refresh
 	 - [ ] Products CRUD
@@ -22,6 +24,7 @@ This project's objective is to setup a simple store stock manager application in
 		 - [ ]  When finishing the purchase
 		 - [ ]  When changing the order status to shipped
 	 - [ ]  WebSockets
+	 - [ ] Errors logging
 
 ### Environment Set Up To Do
 
