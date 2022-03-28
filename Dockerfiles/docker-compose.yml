@@ -1,0 +1,34 @@
+services:
+    api: 
+      container_name: homelab_backend
+      
+      build: 
+        context: ./back-end
+        dockerfile: Dockerfile.development
+      ports:
+        - 8005:8005
+      volumes:
+        - ./back-end:/app
+      networks:
+        - script-network
+        - app-network
+
+    app:
+      container_name: homelab_frontend
+
+      build:
+        context: ./front-end
+        dockerfile: Dockerfile.development
+      ports:
+        - 3008:3000
+      volumes:
+        - ./front-end:/usr/src/app
+      networks:
+        - app-network
+
+networks:
+    script-network:
+      external:
+        name: script-network
+    app-network:
+      driver: bridge
