@@ -1,29 +1,32 @@
 # DevOps Home Lab Project
 ### Objective
-This project's objective is to setup a simple store stock manager application in a cloud server based in AWS with all the infrastructure provisioned using Terraform and Ansible, setting up a complete pipeline that will test, build, check code quality and deploy the app to dev and prod environments. And then finally automating key manual points in the process.
+The project's objective is to solve my struggle with financial planning and give me a nice overview on how far away I'm from my next goal and will also keep track of my crypto investments.
+Once the application is ready I will deploy it in a AWS based cloud server with all the infrastructure provisioned using Terraform and Ansible, setting up a complete pipeline that will test, build, check code quality and deploy the app to dev and prod environments. And then finally automating key manual points in the process.
 
  
 
 ### Application To do
 
- - [ ] Create the [front-end](https://github.com/luiw3/homelab01_front-end) using Next.js
-	 - [ ] Index page with some info about the store
-	 - [ ] Products listing
-	 - [ ] Add product to cart
-	 - [ ] Registration page
-	 - [ ] Login page
-	 - [ ] Check out page
+ - [ ] Create the [front-end](https://github.com/luiw3/homelab01_front-end) using React and Typescript
+	 - [ ] Login and Register page
+	 - [ ] Expenses CRUD
+	 - [ ] Cryptos CRUD
+	 - [ ] Goals CRUD
+	 - [ ] Profile
+	 - [ ] Make it responsive
+	 - [ ] Dashboard
+	 - [ ] Tax calculator (future)
  - [ ] Create the [back-end](https://github.com/luiw3/homelab01_back-end) using Node.js
 	 - [ ] Configure project with typescript
 	 - [ ] Configure automatic lint
 	 - [ ] Set up bearer token to verify users
 	 - [ ] Bearer token auto-refresh
 	 - [ ] Products CRUD
-	 - [ ]  User details
-	 - [ ]  Set up email notification sender
-		 - [ ]  When finishing the purchase
-		 - [ ]  When changing the order status to shipped
-	 - [ ]  WebSockets
+	 - [ ] Expenses CRUD
+	 - [ ] Cryptos CRUD
+	 - [ ] Goals CRUD
+	 - [ ] User CRUD
+	 - [ ] WebSockets
 	 - [ ] Errors logging
 
 ### Environment Set Up To Do
