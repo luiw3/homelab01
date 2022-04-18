@@ -1,7 +1,8 @@
+version: '3.7'
+
 services:
     api: 
       container_name: homelab_backend
-      
       build: 
         context: ./back-end
         dockerfile: Dockerfile.development
@@ -9,12 +10,9 @@ services:
         - 8005:8005
       volumes:
         - ./back-end:/app
-      networks:
-        - app-network
 
     app:
       container_name: homelab_frontend
-
       build:
         context: ./front-end
         dockerfile: Dockerfile.development
@@ -24,8 +22,6 @@ services:
         - 3008:3000
       volumes:
         - ./front-end:/usr/src/app
-      networks:
-        - app-network
 
     postgres:
       image: postgres:13.1
@@ -37,10 +33,4 @@ services:
       ports:
           - 25432:5432
       volumes:
-          - ./volumes/postgres-data:/var/lib/postgresql/data  
-      networks:
-          - app-network
-
-networks:
-    app-network:
-      driver: bridge
+          - ./volumes/postgres-data:/var/lib/postgresql/data
